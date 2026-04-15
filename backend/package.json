@@ -3,13 +3,15 @@
   "scripts": {
     "dev": "bun run --watch src/index.ts",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "bun run src/db/migrate.ts",
+    "db:migrate": "bun run ./src/db/migrate.ts",
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@clerk/backend": "^3.2.10",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
     "elysia": "latest",
+    "elysia-clerk": "^1.0.1",
     "pg": "^8.20.0",
     "postgres": "latest"
   },
